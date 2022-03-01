@@ -1,0 +1,62 @@
+{ "one_time":false,
+  "buttons": [[
+        {
+            "action": {
+                "type": "text",
+                "payload": "{\"button\": \"1\"}",
+                "label": "Новый поиск"
+            },
+            "color": "primary"
+        },{
+                "action": {
+                    "type": "text",
+                  "payload": {"type": "continue_search" },
+                    "label": "Продолжить поиск"
+                },
+                "color": "positive"}],
+
+        [
+        {
+            "action": {
+                "type": "text",
+                "payload": "{\"button\": \"1\"}",
+                "label": "Критерии поиска"
+            },
+            "color": "primary"
+        }],[{
+                "action": {
+                    "type": "text",
+                  "payload": {"type": "blacklist_enter" },
+                    "label": "\uD83D\uDDA4 blacklist"
+                },
+                "color": "secondary"},{
+                "action": {
+                    "type": "text",
+                  "payload": {"type": "favorites_enter" },
+                    "label": "\uD83D\uDC9A favorites_list"
+                },
+                "color": "secondary"}],[{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "Сlear1" },
+                    "label": "Очистить историю поиска"
+                },
+                "color": "negative"}],
+    [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "Сlear2" },
+                    "label": "Сlear blacklist"
+                },
+                "color": "negative"},{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "Сlear3" },
+                    "label": "Сlear favorites"
+                },
+                "color": "negative"}]
+
+
+    ]
+
+}

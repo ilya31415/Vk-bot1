@@ -1,0 +1,70 @@
+{ "one_time":false,
+  "buttons": [[
+        {
+            "action": {
+                "type": "callback",
+                "payload": {"type": "1" },
+                "label": "не женат(не замужем)"
+            },
+            "color": "primary"
+        },{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "2" },
+                "label": "встречается"
+            },
+            "color": "primary"
+        }],
+        [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "3" },
+                  "label": "помолвлен(-а)"
+                },
+                "color": "primary"},{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "4" },
+                "label": "женат(замужем)"
+            },
+            "color": "primary"
+        }],
+       [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "5"},
+                    "label": "всё сложно"
+                },
+                "color": "primary"},{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "6" },
+                "label": "в активном поиске"
+            },
+            "color": "primary"
+        }],
+    [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "7"},
+                    "label": "влюблен(-а)"
+                },
+                "color": "primary"},{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "8" },
+                "label": "в гражданском браке"
+            },
+            "color": "primary"
+        }],[{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "end_criteria"},
+                    "label": "Назад"
+                },
+                "color": "negative"}]
+
+
+    ],
+"inline": true
+}

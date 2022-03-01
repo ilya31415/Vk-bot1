@@ -1,0 +1,19 @@
+{ "one_time":false,
+  "buttons":
+  [
+    [{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "gender_m" },
+                "label": "Мужской"
+            }, "color": "primary" },{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "gender_w"},
+                    "label": "Женский"
+                },
+                "color": "primary"}]
+
+    ],
+"inline": true
+}

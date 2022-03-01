@@ -1,0 +1,25 @@
+{ "one_time":false,
+  "buttons":
+  [
+    [{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "actual_Id" },
+                "label": "Текуший ID"
+            }, "color": "primary" },{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "new_id"},
+                    "label": "Ввести новый"
+                },
+                "color": "primary"}],[{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "my_butt"},
+                    "label": "Назад"
+                },
+                "color": "negative"}]
+
+    ],
+"inline": true
+}

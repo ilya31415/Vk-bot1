@@ -1,0 +1,22 @@
+{ "one_time":false,
+  "buttons": [[
+        {
+            "action": {
+                "type": "callback",
+                "payload": {"type": "criteria_search" },
+                "label": "Ввести критерии"
+            },
+            "color": "primary"
+        }],
+        [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "ID_search" },
+                  "label": "Сканировать ID "
+                },
+                "color": "primary"}]
+
+
+    ],
+"inline": true
+}

@@ -1,0 +1,22 @@
+{ "one_time":false,
+  "buttons":
+  [
+    [{
+            "action": {
+                "type": "callback",
+                "payload":{"type": "show_snackbar", "text": "Поиск начался"},
+                "label": "Да"
+            },
+            "color": "primary" },
+      {
+                "action": {
+                    "type": "text",
+
+                    "label": "Нет"
+                },
+                "color": "primary"}]
+
+
+    ],
+"inline": true
+}

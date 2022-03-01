@@ -1,0 +1,34 @@
+{ "one_time":false,
+  "buttons": [[{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "open_link"},
+                    "label": "Страница VK"
+                },
+                "color": "primary"}],
+        [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "black", "text": "favorites"  },
+                  "label": "В blacklist"
+                },
+                "color": "negative"},{
+            "action": {
+                "type": "callback",
+                "payload": {"type": "favorites", "text": "favorites" },
+                "label": "В favorites"
+            },
+            "color": "positive"
+        }],
+       [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "start_search"},
+                    "label": "Следующий"
+                },
+                "color": "positive"}]
+
+
+    ],
+"inline": true
+}

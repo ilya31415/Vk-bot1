@@ -1,0 +1,14 @@
+{ "one_time":false,
+  "buttons":
+  [
+    [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "end_criteria"},
+                    "label": "не работает"
+                },
+                "color": "negative"}]
+
+    ],
+"inline": true
+}

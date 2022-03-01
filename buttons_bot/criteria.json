@@ -1,0 +1,42 @@
+{ "one_time":false,
+  "buttons": [[
+        {
+            "action": {
+                "type": "callback",
+                "payload": {"type": "City" },
+                "label": "Город"
+            },
+            "color": "primary"
+        }],
+        [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "relation_info" },
+                  "label": "Семейное положение"
+                },
+                "color": "primary"}],
+       [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "gender"},
+                    "label": "Пол"
+                },
+                "color": "primary"}],
+    [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "age_callback"},
+                    "label": "Возраст"
+                },
+                "color": "primary"}],
+    [{
+                "action": {
+                    "type": "callback",
+                  "payload": {"type": "new_search"},
+                    "label": "Начать новый поиск"
+                },
+                "color": "positive"}]
+
+    ],
+"inline": true
+}

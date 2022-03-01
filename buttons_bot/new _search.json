@@ -1,0 +1,21 @@
+{ "one_time":false,
+  "buttons": [[
+        {
+            "action": {
+                "type": "text",
+                "payload": "{\"button\": \"1\"}",
+                "label": "Использовать id собеседника"
+            },
+            "color": "primary"
+        }],
+        [{
+                "action": {
+                    "type": "text",
+
+                    "label": "Ввести новый id"
+                },
+                "color": "primary"}]
+
+    ],
+"inline": true
+}
