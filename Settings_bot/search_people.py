@@ -1,5 +1,5 @@
 import vk_api
-import main
+import config
 import time
 from DB import creature_DB
 
@@ -7,7 +7,7 @@ from DB import creature_DB
 class SearchSoul:
     def __init__(self, id_city=None, user_age=0, gender=1, status=0, id_user=None):
 
-        self.vk_token = main.token_user
+        self.vk_token = config.TOKEN_USER
         self.id = id_user
         self.city = {'id': id_city, 'title': "Данные отсутствуют 🆘"}
         self.user_age = user_age
@@ -55,7 +55,7 @@ class SearchSoul:
                     setattr(self, key, data[key])
 
     def vk(self):
-        return vk_api.VkApi(token=self.vk_token, api_version='5.131', app_id=main.app_id)
+        return vk_api.VkApi(token=self.vk_token, api_version='5.131', app_id=config.APP_ID)
 
     def search_city(self, name_city: str):
         city = self.vk().method('database.getCities', {'country_id': 1, 'q': name_city, 'count': 1})

@@ -1,4 +1,3 @@
 .idea
-venv
-**/*.env
-TOKEN.py
+.env
+Settings_bot/config.py

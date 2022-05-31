@@ -1,7 +1,7 @@
 import sqlalchemy
-import main
+from Settings_bot import config
 
-engine = sqlalchemy.create_engine(main.sqlalchemy_DB)
+engine = sqlalchemy.create_engine(config.sqlalchemy_DB)
 connection = engine.connect()
 
 
